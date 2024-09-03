@@ -5,12 +5,14 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+  theme = "oxocarbon",
+}
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+M.ui = {
+  tabufline = {
+    -- Get rid of the theme toggle button
+    order = { "treeOffset", "buffers", "tabs" },
+  },
 }
 
 return M
